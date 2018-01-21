@@ -1,0 +1,8 @@
+{
+  "extends": "markuplint/html-ls",
+  "rules": {
+     "parse-error": true,
+     "character-reference": true,
+     "doctype": true
+  }
+}

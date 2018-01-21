@@ -1,0 +1,15 @@
+{
+  "name": "markuplint.vim",
+  "version": "1.0.0",
+  "description": "vim-markuplint tests",
+  "main": "n/a",
+  "scripts": {
+    "lint": "markuplint ."
+  },
+  "private": true,
+  "author": "Shinya Ohyanagi",
+  "license": "MIT",
+  "devDependencies": {
+    "markuplint": "^0.16.2"
+  }
+}
