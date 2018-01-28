@@ -10,6 +10,6 @@
   "author": "Shinya Ohyanagi",
   "license": "MIT",
   "devDependencies": {
-    "markuplint": "^0.16.2"
+    "markuplint": "^0.17.0"
   }
 }
