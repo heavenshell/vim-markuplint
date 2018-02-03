@@ -10,6 +10,7 @@ set cpo&vim
 let g:markuplint_bin = get(g:, 'markuplint_bin', '')
 let g:markuplint_enable_quickfix = get(g:, 'markuplint_enable_quickfix', 0)
 let g:markuplint_callbacks = get(g:, 'markuplint_callbacks', {})
+
 let s:root_path = ''
 let s:rcfile = ''
 let s:results = []
@@ -93,7 +94,9 @@ function! markuplint#run(...)
   if exists('s:job') && job_status(s:job) != 'stop'
     call job_stop(s:job)
   endif
-  let bin = markuplint#bin()
+  if g:markuplint_bin == ""
+    let bin = markuplint#bin()
+  endif
   let rcfile = s:detect_rcfile()
 
   if bin == ''

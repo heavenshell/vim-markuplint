@@ -1,0 +1,8 @@
+# vim:set et sw=4 ts=4 tw=79:
+Execute ('Run markuplint'):
+  edit ./test.html
+  :Markuplint
+  sleep 1
+
+  let qf = getqflist()
+  AssertEqual len(qf), 20

@@ -4,3 +4,4 @@
 tags
 tests/vader.vim/
 tests/node_modules/
+tests/package-lock.json
